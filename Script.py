@@ -5,7 +5,7 @@ class script(object):
 ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ғᴏʀ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs.</b>"""
 
     ABOUT_TXT = """<b>⍟───[ MY ᴅᴇᴛᴀɪʟꜱ ]───⍟
-‣ ᴍʏ ɴᴀᴍᴇ : <a href=https://t.me/FilmClan>ꜰɪʟᴍᴄʟᴀɴ</a>
+‣ ᴍʏ ɴᴀᴍᴇ : <a href=https://t.me/Patrick_Bateman_r>༎ࠫ𝗣𝗮𝘁𝗿𝗶𝗰𝗸᭄ 𝗕𝗮𝘁𝗲𝗺𝗮𝗻༎ࠫ</a>
  ‣ My best friend : <a href='tg://settings'>ᴛʜɪs ᴘᴇʀsᴏɴ</a> 
  ‣ ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://t.me/MYD_BOY'>ᴍʏᴅ❀ʙᴏʏ</a> 
  ‣ ʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>ᴘʏʀᴏɢʀᴀᴍ</a> 
@@ -23,7 +23,7 @@ class script(object):
 
 2) ᴛʏᴘᴇ ɴᴀᴍᴇ ᴡɪᴛʜ ʏᴇᴀʀ
 
-3) ᴍᴏᴠɪᴇ ɪs ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ ɪɴ ᴛʜᴇ ᴅᴀᴛᴀʙᴀsᴇ ʀᴇᴘᴏʀᴛ ᴛᴏ ᴀᴅᴍɪɴs @OwnerFcBot</b>"""
+3) ᴍᴏᴠɪᴇ ɪs ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ ɪɴ ᴛʜᴇ ᴅᴀᴛᴀʙᴀsᴇ ʀᴇᴘᴏʀᴛ ᴛᴏ ᴀᴅᴍɪɴs @Patrick_Bateman_r</b>"""
 
     MANUELFILTER_TXT = """ʜᴇʟᴘ: <b>ꜰɪʟᴛᴇʀꜱ</b>
 - ꜰɪʟᴛᴇʀ ɪꜱ ᴀ ꜰᴇᴀᴛᴜʀᴇ ᴡᴇʀᴇ ᴜꜱᴇʀꜱ ᴄᴀɴ ꜱᴇᴛ ᴀᴜᴛᴏᴍᴀᴛᴇᴅ ʀᴇᴘʟɪᴇꜱ ꜰᴏʀ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴋᴇʏᴡᴏʀᴅ ᴀɴᴅ ɪ ᴡɪʟʟ ʀᴇꜱᴘᴏɴᴅ ᴡʜᴇɴᴇᴠᴇʀ ᴀ ᴋᴇʏᴡᴏʀᴅ ɪꜱ ꜰᴏᴜɴᴅ ɪɴ ᴛʜᴇ ᴍᴇꜱꜱᴀɢᴇ
@@ -73,9 +73,9 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
     EXTRAMOD_TXT = """ʜᴇʟᴘ: Exᴛʀᴀ Mᴏᴅᴜʟᴇs
 <b>ɴᴏᴛᴇ:</b>
 my features Stay here new features coming soon...  
- <b>✯ Maintained by : <a href=https://t.me/MYD_BOY>𓊈ᴍʏᴅ ❀ ʙᴏʏ』࿐</a></b>
+ <b>✯ Maintained by : <a href=https://t.me/Patrick_Bateman_r>༎ࠫ𝗣𝗮𝘁𝗿𝗶𝗰𝗸᭄ 𝗕𝗮𝘁𝗲𝗺𝗮𝗻༎ࠫ</a></b>
   
- <b>✯ Join here : <a href=https://t.me/FilmClan>☢Join my updateds☢</a></b> 
+ <b>✯ Join here : <a href=https://t.me/flashmovie_s>☢Join my updateds☢</a></b> 
   
  ./id - <code>ɢᴇᴛ ɪᴅ ᴏꜰ ᴀ ꜱᴘᴇᴄɪꜰɪᴇᴅ ᴜꜱᴇʀ.</ 
  code> 
@@ -663,12 +663,6 @@ Also your tutorial will be Added Your Group..."""
 special Thanks To ❤️ Developers -
 
 -Dev 1 [Owner of this bot ]<a href='https://t.me/MYD_BOY'>𓊈ᴍʏᴅ ❀ ʙᴏʏ』࿐</a>
-
--Dev 2 <a href='https://t.me/MYD_BOY'>𓊈ᴍʏᴅ ❀ ʙᴏʏ』࿐</a>
-
--Dev 3 <a href='https://t.me/MYD_BOY'>𓊈ᴍʏᴅ ❀ ʙᴏʏ』࿐</a>
-
-- Dev 4 <a href='https://t.me/MYD_BOY'>𓊈ᴍʏᴅ ❀ ʙᴏʏ』࿐</a>
 """
 
 

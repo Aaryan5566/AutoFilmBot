@@ -1,7 +1,7 @@
+
 import re
-from os import environ, getenv
-from Script import script
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton  # Import for Inline Button
+from os import environ,getenv
+from Script import script 
 
 id_pattern = re.compile(r'^.\d+$')
 def is_enabled(value, default):
@@ -18,48 +18,15 @@ API_ID = int(environ.get('API_ID', '23378704'))
 API_HASH = environ.get('API_HASH', '15a02b4d02babeb79e8f328b0ead0c17')
 BOT_TOKEN = environ.get('BOT_TOKEN', "7925151038:AAHBbt8BApY7jrUW1hWZSXYzSwZtcCk5WPg")
 
-# Force channel feature
-FORCE_CHANNEL = environ.get('FORCE_CHANNEL', 'flashmovie_s')  # Set your channel username
-
-# Function to check if user is in the force channel
-def check_force_channel(client, message):
-    if FORCE_CHANNEL:
-        try:
-            user_status = client.get_chat_member(FORCE_CHANNEL, message.from_user.id).status
-            if user_status in ("left", "kicked"):
-                join_button = InlineKeyboardMarkup(
-                    [
-                        [InlineKeyboardButton("Join Channel", url=f"https://t.me/{FORCE_CHANNEL}")]
-                    ]
-                )
-                message.reply_text(
-                    "You need to join the channel to use this bot.",
-                    reply_markup=join_button
-                )
-                return False
-            return True
-        except:
-            join_button = InlineKeyboardMarkup(
-                [
-                    [InlineKeyboardButton("Join Channel", url=f"https://t.me/{FORCE_CHANNEL}")]
-                ]
-            )
-            message.reply_text(
-                "Error: Unable to verify your membership. Please join the channel to use the bot.",
-                reply_markup=join_button
-            )
-            return False
-    return True
-
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
+
 PICS = (environ.get('PICS', 'https://envs.sh/T8h.jpg')).split()
 NOR_IMG = environ.get("NOR_IMG", "https://te.legra.ph/file/a27dc8fe434e6b846b0f8.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", 0)
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
 
-# Additional bot code...
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7364818327').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002475059143').split()]
@@ -153,7 +120,19 @@ else:
     URL = "https://related-emeline-flashpoint-ad6d3f5e.koyeb.app/".format(FQDN)
 
 
+# Replace '@yourchannelname' with your channel's username
+FORCE_JOIN_CHANNEL = '@yourchannelname'
 
+def start(update, context):
+    user_id = update.message.from_user.id
+    try:
+        member = context.bot.get_chat_member(FORCE_JOIN_CHANNEL, user_id)
+        if member.status == 'left':
+            update.message.reply_text(f"Please join our channel first: {FORCE_JOIN_CHANNEL}")
+        else:
+            update.message.reply_text("Welcome! You have joined the required channel.")
+    except Exception as e:
+        update.message.reply_text(f"Error: {str(e)}")
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
 LOG_STR += ("P_TTI_SHOW_OFF found , Users will be redirected to send /start to Bot PM instead of sending file file directly\n" if P_TTI_SHOW_OFF else "P_TTI_SHOW_OFF is disabled files will be send in PM, instead of sending start.\n")

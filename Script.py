@@ -5,7 +5,7 @@ class script(object):
 ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ғᴏʀ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs.</b>"""
 
     ABOUT_TXT = """<b>⍟───[ MY ᴅᴇᴛᴀɪʟꜱ ]───⍟
-‣ ᴍʏ ɴᴀᴍᴇ : <a href=https://t.me/Patrick_Bateman_r>༎ࠫ𝗣𝗮𝘁𝗿𝗶𝗰𝗸᭄ 𝗕𝗮𝘁𝗲𝗺𝗮𝗻༎ࠫ</a>
+‣ ᴍʏ ɴᴀᴍᴇ : <a href=https://t.me/Patrick_Bateman_r>༎ࠫFlash</a>
  ‣ My best friend : <a href='tg://settings'>ᴛʜɪs ᴘᴇʀsᴏɴ</a> 
  ‣ ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://t.me/Patrick_Bateman_r'>༎ࠫ𝗣𝗮𝘁𝗿𝗶𝗰𝗸᭄ 𝗕𝗮𝘁𝗲𝗺𝗮𝗻༎ࠫ</a> 
  ‣ ʟɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>ᴘʏʀᴏɢʀᴀᴍ</a> 

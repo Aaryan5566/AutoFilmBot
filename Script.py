@@ -662,7 +662,7 @@ Also your tutorial will be Added Your Group..."""
     DEVELOPER_TXT = """
 special Thanks To ❤️ Developers -
 
--Dev 1 [Owner of this bot ]<a href='https://t.me/MYD_BOY'>𓊈ᴍʏᴅ ❀ ʙᴏʏ』࿐</a>
+-Dev 1 [Owner of this bot ]<a href='https://t.me/Patrick_Bateman_r'>༎ࠫ𝗣𝗮𝘁𝗿𝗶𝗰𝗸᭄ 𝗕𝗮𝘁𝗲𝗺𝗮𝗻༎ࠫ</a>
 """
 
 

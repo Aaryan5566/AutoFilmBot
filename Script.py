@@ -94,7 +94,7 @@ my features Stay here new features coming soon...
 
 
     ADMIN_TXT = """ʜᴇʟᴘ: Aᴅᴍɪɴ Mᴏᴅs
-<b>ɴᴏᴛᴇ:</b>
+</b>ɴᴏᴛᴇ:</b>
 Tʜɪs Mᴏᴅᴜʟᴇ Oɴʟʏ Wᴏʀᴋs Fᴏʀ Mʏ Aᴅᴍɪɴs
 Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 • /logs - <code>ᴛᴏ ɢᴇᴛ ᴛʜᴇ ʀᴇᴄᴇɴᴛ ᴇʀʀᴏʀꜱ</code>

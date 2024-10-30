@@ -3,7 +3,7 @@ import sys
 import glob
 import importlib
 from pathlib import Path
-from pyrofork import idle
+from pyrogram import idle
 import logging
 import logging.config
 

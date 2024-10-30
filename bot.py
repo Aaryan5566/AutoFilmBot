@@ -3,7 +3,7 @@ import sys
 import glob
 import importlib
 from pathlib import Path
-from pyrogram import idle
+from pyrofork import idle
 import logging
 import logging.config
 
@@ -20,14 +20,14 @@ logging.getLogger("aiohttp").setLevel(logging.ERROR)
 logging.getLogger("aiohttp.web").setLevel(logging.ERROR)
 
 
-from pyrogram import Client, __version__
-from pyrogram.raw.all import layer
+from pyrofork import Client, __version__
+from pyrofork.raw.all import layer
 from database.ia_filterdb import Media
 from database.users_chats_db import db
 from info import *
 from utils import temp
 from typing import Union, Optional, AsyncGenerator
-from pyrogram import types
+from pyrofork import types
 from Script import script 
 from datetime import date, datetime 
 import pytz
@@ -35,7 +35,7 @@ from aiohttp import web
 from plugins import web_server
 
 import asyncio
-from pyrogram import idle
+from pyrofork import idle
 from lazybot import LazyPrincessBot
 from util.keepalive import ping_server
 from lazybot.clients import initialize_clients

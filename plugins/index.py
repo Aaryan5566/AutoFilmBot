@@ -1,20 +1,20 @@
-# (c) github - @Rishikesh-Sharma09 ,telegram - https://telegram.me/Rk_botz
-# removing credits doesn't make you coder 
-
-# New better way of indexing and skipping added 
+# Don't Remove Credit @VJ_Botz
+# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
+# Ask Doubt on telegram @KingVJ01
 
 import logging
 import asyncio
 from pyrogram import Client, filters, enums
 from pyrogram.errors import FloodWait
-
-from pyrogram.errors.exceptions.bad_request_400 import ChannelInvalid, ChatAdminRequired, UsernameInvalid, UsernameNotModified, UserIsBlocked
-from info import ADMINS, LOG_CHANNEL, INDEX_EXTENSIONS
+from pyrogram.errors.exceptions.bad_request_400 import ChannelInvalid, ChatAdminRequired, UsernameInvalid, UsernameNotModified
+from info import ADMINS
+from info import INDEX_REQ_CHANNEL as LOG_CHANNEL
 from database.ia_filterdb import save_file
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ForceReply
-from utils import temp, get_readable_time
-import re, time
-
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from utils import temp
+import re
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
 lock = asyncio.Lock()
 
 @Client.on_callback_query(filters.regex(r'^index'))

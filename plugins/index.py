@@ -1,13 +1,16 @@
+import logging
 import asyncio
 from pyrogram import Client, filters, enums
 from pyrogram.errors import FloodWait
 from pyrogram.errors.exceptions.bad_request_400 import ChannelInvalid, ChatAdminRequired, UsernameInvalid, UsernameNotModified
-from info import ADMINS, LOG_CHANNEL, CHANNELS
+from info import ADMINS
+from info import INDEX_REQ_CHANNEL as LOG_CHANNEL
 from database.ia_filterdb import save_file
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from utils import temp, get_readable_time
-import time
-
+from utils import temp
+import re
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
 lock = asyncio.Lock()
 
 @Client.on_callback_query(filters.regex(r'^index'))

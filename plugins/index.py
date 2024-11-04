@@ -1,20 +1,15 @@
-# (c) github - @Rishikesh-Sharma09 ,telegram - https://telegram.me/Rk_botz
-# removing credits doesn't make you coder 
-
-# New better way of indexing and skipping added 
-
-import logging
-import asyncio
+import logging, re, asyncio
+from utils import temp
+from info import ADMINS
 from pyrogram import Client, filters, enums
 from pyrogram.errors import FloodWait
-
-from pyrogram.errors.exceptions.bad_request_400 import ChannelInvalid, ChatAdminRequired, UsernameInvalid, UsernameNotModified, UserIsBlocked
-from info import ADMINS, LOG_CHANNEL, INDEX_REQ_CHANNEL
+from pyrogram.errors.exceptions.bad_request_400 import ChannelInvalid, ChatAdminRequired, UsernameInvalid, UsernameNotModified
+from info import INDEX_REQ_CHANNEL as LOG_CHANNEL
 from database.ia_filterdb import save_file
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ForceReply
-from utils import temp, get_readable_time
-import re, time
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
 lock = asyncio.Lock()
 
 @Client.on_callback_query(filters.regex(r'^index'))
@@ -116,7 +111,19 @@ async def forceskip(client, message):
             reply_markup=reply_markup)
  
     
-    
+
+@Client.on_message(filters.command('setskip') & filters.user(ADMINS))
+async def set_skip_number(bot, message):
+    if ' ' in message.text:
+        _, skip = message.text.split(" ")
+        try:
+            skip = int(skip)
+        except:
+            return await message.reply("Skip number should be an integer.")
+        await message.reply(f"Successfully set SKIP number as {skip}")
+        temp.CURRENT = int(skip)
+    else:
+        await message.reply("Give me a skip number")
 
 
 async def index_files_to_db(lst_msg_id, chat, msg, bot, skip):

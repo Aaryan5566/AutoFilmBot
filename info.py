@@ -16,7 +16,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '23378704'))
 API_HASH = environ.get('API_HASH', '15a02b4d02babeb79e8f328b0ead0c17')
-BOT_TOKEN = environ.get('BOT_TOKEN', "7731400741:AAGYCNBnl10690xnyMibiOcMCvi5xmbVA04")
+BOT_TOKEN = environ.get('BOT_TOKEN', "7231321045:AAGCHxWpjcOGvNzgjGyZznMsWSW_rtPyykM")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -62,7 +62,7 @@ CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/flashmovie_s')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/flashmovie_s')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'Hello Nanbha and Nanbis ❤️')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002337969221'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002370935323'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/flashrequestmoviegroup')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)

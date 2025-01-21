@@ -22,7 +22,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://envs.sh/T8h.jpg')).split()
+PICS = (environ.get('PICS', 'https://envs.sh/T8h.jpg https://envs.sh/gBI.jpg https://envs.sh/T8Q.jpg')).split()
 NOR_IMG = environ.get("NOR_IMG", "https://te.legra.ph/file/a27dc8fe434e6b846b0f8.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", 0)
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
@@ -57,13 +57,13 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 MAX_B_TN = environ.get("MAX_B_TN", "8")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/flashrequestmoviegroup')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/flashmovie_s')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/flashmovie_s')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/requestmoviesgroup0')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Patrick_Botz')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/Patrick_Botz')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'Hello Nanbha and Nanbis ❤️')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/flashrequestmoviegroup')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/requestmoviesgroup0')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
@@ -115,9 +115,9 @@ else:
     ON_HEROKU = False
 HAS_SSL=bool(getenv('HAS_SSL',False))
 if HAS_SSL:
-    URL = "https://mixed-laurianne-flashpoint-f3f0ec98.koyeb.app/".format(FQDN)
+    URL = "".format(FQDN)
 else:
-    URL =  "https://mixed-laurianne-flashpoint-f3f0ec98.koyeb.app/".format(FQDN)
+    URL =  "".format(FQDN)
 
 
 # Replace '@yourchannelname' with your channel's username

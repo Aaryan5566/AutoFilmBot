@@ -44,9 +44,9 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://rohtashkumarsharma1994:NxNSQqdRkE8gHVHB@cluster0.5gatz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0i7hjvjb")
-DATABASE_NAME = environ.get('DATABASE_NAME', "koyeb0125")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://koyeb0125:NISQEh3836CQLw2h@cluster0.onkp2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Mhakalx)
 
 # Others
 VERIFY = bool(environ.get('VERIFY', False))
@@ -62,7 +62,7 @@ CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Patrick_Botz')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/Patrick_Botz')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'Hello Nanbha and Nanbs ❤️')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002393373626'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/requestmoviesgroup0')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
